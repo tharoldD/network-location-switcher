@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2A9A9661F9A8C16008FDFC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A9A9651F9A8C16008FDFC5 /* AppDelegate.swift */; };
+		F2A9A9681F9A8C16008FDFC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A9A9671F9A8C16008FDFC5 /* ViewController.swift */; };
+		F2A9A96A1F9A8C16008FDFC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A9A9691F9A8C16008FDFC5 /* Assets.xcassets */; };
+		F2A9A96D1F9A8C16008FDFC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A9A96B1F9A8C16008FDFC5 /* Main.storyboard */; };
+		F2A9A9791F9A8C16008FDFC5 /* Network_Location_SwitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A9A9781F9A8C16008FDFC5 /* Network_Location_SwitcherTests.swift */; };
+		F2A9A9841F9A8C16008FDFC5 /* Network_Location_SwitcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A9A9831F9A8C16008FDFC5 /* Network_Location_SwitcherUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2A9A9751F9A8C16008FDFC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2A9A95A1F9A8C16008FDFC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2A9A9611F9A8C16008FDFC5;
+			remoteInfo = "Network Location Switcher";
+		};
+		F2A9A9801F9A8C16008FDFC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2A9A95A1F9A8C16008FDFC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2A9A9611F9A8C16008FDFC5;
+			remoteInfo = "Network Location Switcher";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2A9A9621F9A8C16008FDFC5 /* Network Location Switcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Network Location Switcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A9A9651F9A8C16008FDFC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2A9A9671F9A8C16008FDFC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2A9A9691F9A8C16008FDFC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2A9A96C1F9A8C16008FDFC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2A9A96E1F9A8C16008FDFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A9A96F1F9A8C16008FDFC5 /* Network_Location_Switcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Network_Location_Switcher.entitlements; sourceTree = "<group>"; };
+		F2A9A9741F9A8C16008FDFC5 /* Network Location SwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Network Location SwitcherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A9A9781F9A8C16008FDFC5 /* Network_Location_SwitcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network_Location_SwitcherTests.swift; sourceTree = "<group>"; };
+		F2A9A97A1F9A8C16008FDFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A9A97F1F9A8C16008FDFC5 /* Network Location SwitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Network Location SwitcherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A9A9831F9A8C16008FDFC5 /* Network_Location_SwitcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network_Location_SwitcherUITests.swift; sourceTree = "<group>"; };
+		F2A9A9851F9A8C16008FDFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2A9A95F1F9A8C16008FDFC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A9A9711F9A8C16008FDFC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A9A97C1F9A8C16008FDFC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2A9A9591F9A8C16008FDFC5 = {
+			isa = PBXGroup;
+			children = (
+				F2A9A9641F9A8C16008FDFC5 /* Network Location Switcher */,
+				F2A9A9771F9A8C16008FDFC5 /* Network Location SwitcherTests */,
+				F2A9A9821F9A8C16008FDFC5 /* Network Location SwitcherUITests */,
+				F2A9A9631F9A8C16008FDFC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2A9A9631F9A8C16008FDFC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2A9A9621F9A8C16008FDFC5 /* Network Location Switcher.app */,
+				F2A9A9741F9A8C16008FDFC5 /* Network Location SwitcherTests.xctest */,
+				F2A9A97F1F9A8C16008FDFC5 /* Network Location SwitcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2A9A9641F9A8C16008FDFC5 /* Network Location Switcher */ = {
+			isa = PBXGroup;
+			children = (
+				F2A9A9651F9A8C16008FDFC5 /* AppDelegate.swift */,
+				F2A9A9671F9A8C16008FDFC5 /* ViewController.swift */,
+				F2A9A9691F9A8C16008FDFC5 /* Assets.xcassets */,
+				F2A9A96B1F9A8C16008FDFC5 /* Main.storyboard */,
+				F2A9A96E1F9A8C16008FDFC5 /* Info.plist */,
+				F2A9A96F1F9A8C16008FDFC5 /* Network_Location_Switcher.entitlements */,
+			);
+			path = "Network Location Switcher";
+			sourceTree = "<group>";
+		};
+		F2A9A9771F9A8C16008FDFC5 /* Network Location SwitcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2A9A9781F9A8C16008FDFC5 /* Network_Location_SwitcherTests.swift */,
+				F2A9A97A1F9A8C16008FDFC5 /* Info.plist */,
+			);
+			path = "Network Location SwitcherTests";
+			sourceTree = "<group>";
+		};
+		F2A9A9821F9A8C16008FDFC5 /* Network Location SwitcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2A9A9831F9A8C16008FDFC5 /* Network_Location_SwitcherUITests.swift */,
+				F2A9A9851F9A8C16008FDFC5 /* Info.plist */,
+			);
+			path = "Network Location SwitcherUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2A9A9611F9A8C16008FDFC5 /* Network Location Switcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A9A9881F9A8C16008FDFC5 /* Build configuration list for PBXNativeTarget "Network Location Switcher" */;
+			buildPhases = (
+				F2A9A95E1F9A8C16008FDFC5 /* Sources */,
+				F2A9A95F1F9A8C16008FDFC5 /* Frameworks */,
+				F2A9A9601F9A8C16008FDFC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Network Location Switcher";
+			productName = "Network Location Switcher";
+			productReference = F2A9A9621F9A8C16008FDFC5 /* Network Location Switcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2A9A9731F9A8C16008FDFC5 /* Network Location SwitcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A9A98B1F9A8C16008FDFC5 /* Build configuration list for PBXNativeTarget "Network Location SwitcherTests" */;
+			buildPhases = (
+				F2A9A9701F9A8C16008FDFC5 /* Sources */,
+				F2A9A9711F9A8C16008FDFC5 /* Frameworks */,
+				F2A9A9721F9A8C16008FDFC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2A9A9761F9A8C16008FDFC5 /* PBXTargetDependency */,
+			);
+			name = "Network Location SwitcherTests";
+			productName = "Network Location SwitcherTests";
+			productReference = F2A9A9741F9A8C16008FDFC5 /* Network Location SwitcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2A9A97E1F9A8C16008FDFC5 /* Network Location SwitcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A9A98E1F9A8C16008FDFC5 /* Build configuration list for PBXNativeTarget "Network Location SwitcherUITests" */;
+			buildPhases = (
+				F2A9A97B1F9A8C16008FDFC5 /* Sources */,
+				F2A9A97C1F9A8C16008FDFC5 /* Frameworks */,
+				F2A9A97D1F9A8C16008FDFC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2A9A9811F9A8C16008FDFC5 /* PBXTargetDependency */,
+			);
+			name = "Network Location SwitcherUITests";
+			productName = "Network Location SwitcherUITests";
+			productReference = F2A9A97F1F9A8C16008FDFC5 /* Network Location SwitcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2A9A95A1F9A8C16008FDFC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Harold Turyasingura";
+				TargetAttributes = {
+					F2A9A9611F9A8C16008FDFC5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					F2A9A9731F9A8C16008FDFC5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F2A9A9611F9A8C16008FDFC5;
+					};
+					F2A9A97E1F9A8C16008FDFC5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F2A9A9611F9A8C16008FDFC5;
+					};
+				};
+			};
+			buildConfigurationList = F2A9A95D1F9A8C16008FDFC5 /* Build configuration list for PBXProject "Network Location Switcher" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2A9A9591F9A8C16008FDFC5;
+			productRefGroup = F2A9A9631F9A8C16008FDFC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2A9A9611F9A8C16008FDFC5 /* Network Location Switcher */,
+				F2A9A9731F9A8C16008FDFC5 /* Network Location SwitcherTests */,
+				F2A9A97E1F9A8C16008FDFC5 /* Network Location SwitcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2A9A9601F9A8C16008FDFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A9A96A1F9A8C16008FDFC5 /* Assets.xcassets in Resources */,
+				F2A9A96D1F9A8C16008FDFC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A9A9721F9A8C16008FDFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A9A97D1F9A8C16008FDFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2A9A95E1F9A8C16008FDFC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A9A9681F9A8C16008FDFC5 /* ViewController.swift in Sources */,
+				F2A9A9661F9A8C16008FDFC5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A9A9701F9A8C16008FDFC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A9A9791F9A8C16008FDFC5 /* Network_Location_SwitcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A9A97B1F9A8C16008FDFC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A9A9841F9A8C16008FDFC5 /* Network_Location_SwitcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2A9A9761F9A8C16008FDFC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2A9A9611F9A8C16008FDFC5 /* Network Location Switcher */;
+			targetProxy = F2A9A9751F9A8C16008FDFC5 /* PBXContainerItemProxy */;
+		};
+		F2A9A9811F9A8C16008FDFC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2A9A9611F9A8C16008FDFC5 /* Network Location Switcher */;
+			targetProxy = F2A9A9801F9A8C16008FDFC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2A9A96B1F9A8C16008FDFC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2A9A96C1F9A8C16008FDFC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2A9A9861F9A8C16008FDFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2A9A9871F9A8C16008FDFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		F2A9A9891F9A8C16008FDFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Network Location Switcher/Network_Location_Switcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A67375FA9C;
+				INFOPLIST_FILE = "Network Location Switcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hturyasingura.com.Network-Location-Switcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F2A9A98A1F9A8C16008FDFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Network Location Switcher/Network_Location_Switcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A67375FA9C;
+				INFOPLIST_FILE = "Network Location Switcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hturyasingura.com.Network-Location-Switcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		F2A9A98C1F9A8C16008FDFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A67375FA9C;
+				INFOPLIST_FILE = "Network Location SwitcherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hturyasingura.com.Network-Location-SwitcherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Network Location Switcher.app/Contents/MacOS/Network Location Switcher";
+			};
+			name = Debug;
+		};
+		F2A9A98D1F9A8C16008FDFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A67375FA9C;
+				INFOPLIST_FILE = "Network Location SwitcherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hturyasingura.com.Network-Location-SwitcherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Network Location Switcher.app/Contents/MacOS/Network Location Switcher";
+			};
+			name = Release;
+		};
+		F2A9A98F1F9A8C16008FDFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A67375FA9C;
+				INFOPLIST_FILE = "Network Location SwitcherUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hturyasingura.com.Network-Location-SwitcherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "Network Location Switcher";
+			};
+			name = Debug;
+		};
+		F2A9A9901F9A8C16008FDFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A67375FA9C;
+				INFOPLIST_FILE = "Network Location SwitcherUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hturyasingura.com.Network-Location-SwitcherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "Network Location Switcher";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2A9A95D1F9A8C16008FDFC5 /* Build configuration list for PBXProject "Network Location Switcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A9A9861F9A8C16008FDFC5 /* Debug */,
+				F2A9A9871F9A8C16008FDFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2A9A9881F9A8C16008FDFC5 /* Build configuration list for PBXNativeTarget "Network Location Switcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A9A9891F9A8C16008FDFC5 /* Debug */,
+				F2A9A98A1F9A8C16008FDFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2A9A98B1F9A8C16008FDFC5 /* Build configuration list for PBXNativeTarget "Network Location SwitcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A9A98C1F9A8C16008FDFC5 /* Debug */,
+				F2A9A98D1F9A8C16008FDFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2A9A98E1F9A8C16008FDFC5 /* Build configuration list for PBXNativeTarget "Network Location SwitcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A9A98F1F9A8C16008FDFC5 /* Debug */,
+				F2A9A9901F9A8C16008FDFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2A9A95A1F9A8C16008FDFC5 /* Project object */;
+}
