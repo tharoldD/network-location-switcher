@@ -13,6 +13,7 @@
 		F2A9A96D1F9A8C16008FDFC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A9A96B1F9A8C16008FDFC5 /* Main.storyboard */; };
 		F2A9A9791F9A8C16008FDFC5 /* Network_Location_SwitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A9A9781F9A8C16008FDFC5 /* Network_Location_SwitcherTests.swift */; };
 		F2A9A9841F9A8C16008FDFC5 /* Network_Location_SwitcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A9A9831F9A8C16008FDFC5 /* Network_Location_SwitcherUITests.swift */; };
+		F2A9A9921F9B16FB008FDFC5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A9A9911F9B16FB008FDFC5 /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		F2A9A97F1F9A8C16008FDFC5 /* Network Location SwitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Network Location SwitcherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A9A9831F9A8C16008FDFC5 /* Network_Location_SwitcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network_Location_SwitcherUITests.swift; sourceTree = "<group>"; };
 		F2A9A9851F9A8C16008FDFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A9A9911F9B16FB008FDFC5 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				F2A9A96B1F9A8C16008FDFC5 /* Main.storyboard */,
 				F2A9A96E1F9A8C16008FDFC5 /* Info.plist */,
 				F2A9A96F1F9A8C16008FDFC5 /* Network_Location_Switcher.entitlements */,
+				F2A9A9911F9B16FB008FDFC5 /* StringExtensions.swift */,
 			);
 			path = "Network Location Switcher";
 			sourceTree = "<group>";
@@ -193,6 +196,11 @@
 					F2A9A9611F9A8C16008FDFC5 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					F2A9A9731F9A8C16008FDFC5 = {
 						CreatedOnToolsVersion = 9.0;
@@ -257,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A9A9921F9B16FB008FDFC5 /* StringExtensions.swift in Sources */,
 				F2A9A9681F9A8C16008FDFC5 /* ViewController.swift in Sources */,
 				F2A9A9661F9A8C16008FDFC5 /* AppDelegate.swift in Sources */,
 			);
@@ -415,7 +424,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Network Location Switcher/Network_Location_Switcher.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = A67375FA9C;
@@ -431,7 +439,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Network Location Switcher/Network_Location_Switcher.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = A67375FA9C;
