@@ -76,6 +76,22 @@ class ViewController: NSViewController {
         task.waitUntilExit()
         return (output, task.terminationStatus)
     }
-
+    
+    @IBAction func setLocationClicked(_ sender: Any) {
+        if let selectedLocation = locationsPopUp.titleOfSelectedItem {
+            let (output, terminationStatus) = shell(arguments: ["-c","scselect \(selectedLocation)"])
+            if terminationStatus == 0 {
+                let commandResponse = output?.components(separatedBy: CharacterSet.newlines)
+                
+                for var response in commandResponse! {
+                    response = response.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+                    print(response)
+                    // TODO: Use this response to maybe show a popup alert of
+                    // success or something
+                }
+            }
+        }
+    }
+    
 }
 
