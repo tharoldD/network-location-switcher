@@ -1,4 +1,4 @@
-#Network Location Switcher
+# Network Location Switcher
 
 This is a boredom project...
 
@@ -9,7 +9,7 @@ and outside of work.
 I also do not know Swift and I'm just learning, what better way than to start with
 a minor project.
 
-##Ooooh, what does this button do?
+## Ooooh, what does this button do?
 Well, the goal is to build an app that listens for network changes and automatically
 switches configs and profiles.
 
