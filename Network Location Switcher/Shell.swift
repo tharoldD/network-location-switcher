@@ -82,4 +82,23 @@ class Shell {
         }
         return clean.trimmingCharacters(in: CharacterSet.decomposables)
     }
+    
+    func getCurrentWifi() -> String {
+        let (output, terminationStatus) =  runCommand(arguments: ["-c","/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I"])
+
+        if (terminationStatus == 0) {
+            if (output == "AirPort: Off\n") {
+                return output!
+            }
+            let networkStatusArray = output?.components(separatedBy: CharacterSet.newlines)
+            
+            for var wifi in networkStatusArray! {
+                wifi = wifi.trimmingCharacters(in: CharacterSet.whitespaces)
+                if (wifi.contains("SSID") && wifi.hasPrefix("S")) {
+                    return wifi.replaceFirstOccurence(target: "SSID: ", withString: "")
+                }
+            }
+        }
+        return ""
+    }
 }

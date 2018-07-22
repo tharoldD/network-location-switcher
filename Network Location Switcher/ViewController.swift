@@ -8,6 +8,7 @@
 //  Borrowed ideas from...
 //  https://stackoverflow.com/a/42403944
 //  https://github.com/rimar/wifi-location-changer
+//  https://stackoverflow.com/a/4481019/7715706
 
 import Cocoa
 import RealmSwift
