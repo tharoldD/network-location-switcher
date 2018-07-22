@@ -10,49 +10,27 @@
 //  https://github.com/rimar/wifi-location-changer
 
 import Cocoa
+import RealmSwift
 
 class ViewController: NSViewController {
     @IBOutlet weak var networksPopUp: NSPopUpButton!
     @IBOutlet weak var locationsPopUp: NSPopUpButton!
     
+    let shell = Shell()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let realm = try! Realm()
+        let locations = realm.objects(Location.self)
+        let networks = realm.objects(Network.self)
         
-        // Get saved location names
-        let (output, terminationStatus) = shell(arguments: ["-c", "defaults read /Library/Preferences/SystemConfiguration/com.apple.airport.preferences | grep SSIDString"])
-        if (terminationStatus == 0) {
-            let arrayOfWifi = output?.components(separatedBy: CharacterSet.newlines)
-            
-            for var aWifi in arrayOfWifi! {
-                aWifi = aWifi.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-                if (aWifi.hasPrefix("SSIDString = ")) {
-                    aWifi = aWifi.stringByReplacingFirstOccurrenceOfString(target: "SSIDString = ", withString: "")
-                }
-                if (aWifi.hasPrefix("\"")) {
-                    aWifi = aWifi.stringByReplacingFirstOccurrenceOfString(target: "\"", withString: "")
-                }
-                if (aWifi.hasSuffix("\";")) {
-                    aWifi = aWifi.stringByReplacingLastOccurrenceOfString(target: "\";", withString: "")
-                }
-                if (aWifi.hasSuffix(";")) {
-                    aWifi = aWifi.stringByReplacingLastOccurrenceOfString(target: ";", withString: "")
-                }
-                aWifi = aWifi.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-                networksPopUp.addItem(withTitle: aWifi)
-            }
+        for location in locations {
+            locationsPopUp.addItem(withTitle: location.name)
         }
-        // Get saved Network Locations
-        let (output2, terminationStatus2) = shell(arguments: ["-c","scselect | tail -n +2 | cut -d \"(\" -f 2 | cut -d \")\" -f 1"])
-        if (terminationStatus2 == 0) {
-            let arrayOfLocations = output2?.components(separatedBy: CharacterSet.newlines)
-            
-            for var aLocation in arrayOfLocations! {
-                aLocation = aLocation.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-                aLocation = aLocation.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-                locationsPopUp.addItem(withTitle: aLocation)
-            }
+        for network in networks {
+            networksPopUp.addItem(withTitle: network.name)
         }
     }
 
@@ -61,25 +39,28 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-    func shell(arguments: [String] = []) -> (String?, Int32) {
-        let task = Process()
-        task.launchPath = "/bin/bash"
-        task.arguments = arguments
-        
-        let pipe = Pipe()
-        task.standardOutput = pipe
-        task.standardError = pipe
-        task.launch()
-        let data = pipe.fileHandleForReading.readDataToEndOfFile()
-        let output = String(data: data, encoding: .utf8)
-        task.waitUntilExit()
-        return (output, task.terminationStatus)
-    }
     
     @IBAction func setLocationClicked(_ sender: Any) {
         if let selectedLocation = locationsPopUp.titleOfSelectedItem {
-            let (output, terminationStatus) = shell(arguments: ["-c","scselect \(selectedLocation)"])
+            
+            let networkLocation = NetworkLocation()
+            let location = Store.findLocation(location: selectedLocation)
+            let network = Store.findNetwork(network: networksPopUp.titleOfSelectedItem!)
+            
+            networkLocation.location = location
+            networkLocation.network = network
+            
+            let realm = try! Realm()
+            try! realm.write{
+                realm.add(networkLocation)
+            }
+            
+        }
+    }
+    
+    func switchLocation() {
+        if let selectedLocation = locationsPopUp.titleOfSelectedItem {
+            let (output, terminationStatus) = shell.setCurrentLocation(location: selectedLocation)
             if terminationStatus == 0 {
                 let commandResponse = output?.components(separatedBy: CharacterSet.newlines)
                 
@@ -94,4 +75,3 @@ class ViewController: NSViewController {
     }
     
 }
-

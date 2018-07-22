@@ -11,7 +11,7 @@
 import Foundation
 
 extension String {
-    func stringByReplacingFirstOccurrenceOfString(
+    func replaceFirstOccurence(
         target: String, withString replaceString: String) -> String
     {
         if let range = self.range(of: target) {
@@ -22,7 +22,7 @@ extension String {
 }
 
 extension String {
-    func stringByReplacingLastOccurrenceOfString(
+    func replaceLastOccurrence(
         target: String, withString replaceString: String) -> String
     {
         if let range = self.range(of: target, options: String.CompareOptions.backwards) {
